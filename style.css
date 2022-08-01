@@ -1,16 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
 * {
     box-sizing: border-box;
+    outline: none;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    background-color: #7bdaf3;
+    font-family: "Poppins", sans-serif;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+    flex-wrap: wrap;
     margin: 0;
+    padding-top: 3rem;
+}
+
+.add {
+    top: 1rem;
+    right: 1rem;
+    position: fixed;
+    color: #fff;
+    background-color: #9ec862;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.add:active {
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+}
+
+.note {
+    height: 400px;
+    width: 400px;
+    margin: 30px 20px;
+    background-color: #fff;
+    overflow-y: scroll;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note .tools {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    background-color: #9ec862;
+}
+
+.note .tools button {
+    color: #fff;
+    margin-left: 0.5rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.note textarea {
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.main {
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
 }
